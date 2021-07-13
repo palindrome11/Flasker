@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import requests
 
 # Create a Flask Instance
 app = Flask(__name__)
