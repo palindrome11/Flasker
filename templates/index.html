@@ -5,8 +5,26 @@
     <title>Flasker</title>
 </head>
 <body>
+<h1>Hello World</h1>
 
-<p>Hi There </p>p>
+<p>Hi There... This is my first web page</p>
+<p> Isn't this cool ?</p>
+
+<p>My name is {{first_name}}</p>
+
+<p>{{stuff|safe}}</p>
+
+<h3>Favorite Pizza:</h3>
+{% for topping in favorite_pizza %}
+    {% if topping == 41 %}
+        {{topping + 100}}<br/>
+    {% else %}
+        {{ topping }}<br/>
+    {% endif %}
+{% endfor %}
+
+<br/><br/>
+{{ favorite_pizza.3 + 10}}
 
 </body>
 </html>
